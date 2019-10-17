@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="600.0" maxWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OpeningController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/openingBackground.jpg" />
+         </image>
+      </ImageView>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="40.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="118.0" fitWidth="522.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/title.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="54.0" prefWidth="300.0" spacing="15.0">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="26.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/subtitle.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="39.0" prefWidth="74.0">
+                                       <children>
+                                          <Label fx:id="numLabel" prefHeight="31.0" prefWidth="39.0" text="3" textAlignment="RIGHT" textFill="#e0f806">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                             <StackPane.margin>
+                                                <Insets />
+                                             </StackPane.margin>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </StackPane>
+                        <Slider fx:id="numSlider" blockIncrement="1.0" max="15.0" min="3.0" prefHeight="16.0" prefWidth="171.0" value="3.0">
+                           <VBox.margin>
+                              <Insets bottom="90.0" left="70.0" right="70.0" top="10.0" />
+                           </VBox.margin>
+                        </Slider>
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="150.0" right="150.0" />
+                     </StackPane.margin>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="helpButton" fitHeight="60.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/helpButton.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="startButton" fitHeight="50.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/startButton.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </children></StackPane>
+         </children>
+         <StackPane.margin>
+            <Insets bottom="40.0" top="40.0" />
+         </StackPane.margin>
+      </VBox>
+   </children>
+</StackPane>
